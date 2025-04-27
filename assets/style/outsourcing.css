@@ -1,0 +1,414 @@
+/* 아웃소싱 */
+:root{
+	--os-main-color : #0B317C;
+	--os-black : #000;
+    --os-gray : #757575;
+    --os-gray02 : #EEEFEF;
+	--os-white : #fff;
+}
+
+/* outsourcing common */
+/* header .topMenuSec .menuListWrap .btnWrap .clickToCall {background: var(--os-main-color);}
+.quickWrap .wrap1 .btnWrap .btn .on, .quickWrap .wrap1 .logoBtn {background-color: var(--os-main-color);}
+.ApplyBox .sub span, .ApplyBox form label span {color: var(--os-main-color);}
+.ApplyBox form .agreeBox input[type="checkbox"]:checked + .txt::before {background-image: url('/assets/img/outsourcing/common/checkbox_after.png');} */
+
+.outsourcing {word-break: keep-all; color: var(--os-black);}
+.outsourcing h3.tit {font-size: 45px; font-weight: 800; line-height: normal; color: var(--os-main-color);}
+
+/* outsourcing mainArti */
+.outsourcing .mainArti {padding: 131px 0 94px; margin-top: 87px; color: var(--os-white); background-repeat: no-repeat; background-size: cover; background-position: top left; background-image: url('/assets/img/outsourcing/mainArti/pcBg.png');}
+.outsourcing .mainArti .inner {width: 1477px;}
+.outsourcing .mainArti .txtWrap {position: relative; display: inline-block; text-align: center;}
+.outsourcing .mainArti h4.sub {font-size: 40px; font-weight: 600; line-height: normal; text-align: left; padding-left: 102px;}
+.outsourcing .mainArti h4.sub .point {position: relative;}
+.outsourcing .mainArti h4.sub .point:before {content: ''; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); width: 9px; height: 9px; background-color: var(--os-white); border-radius: 100%;}
+.outsourcing .mainArti h3.tit {color: var(--os-white); font-size: 100px; font-weight: 900; line-height: normal; text-align: left; margin-bottom: 153px;}
+.outsourcing .mainArti .desc {font-size: 33px; font-weight: 400; line-height: normal; text-align: left; margin-bottom: 72px;}
+.outsourcing .mainArti .desc b {font-weight: 900;}
+.outsourcing .mainArti .clickToConsult {position: relative; display: inline-flex; justify-content: center; align-items: center; gap: 40px; width: 407px; height: 105px; color: var(--os-main-color); font-size: 45px; font-weight: 600; padding: 25px 52px; border: none; border-radius: 100px; background: var(--os-white);}
+.outsourcing .mainArti  .clickToConsult:after {content: ''; position: relative; width: 64px; height: 64px; background: url('/assets/img/outsourcing/mainArti/btnIco.svg') no-repeat center center / contain; margin-right: -47px;}
+
+@media screen and (max-width: 1550px){
+    .outsourcing .mainArti .inner {width: 100%;}
+}
+@media screen and (max-width: 650px){
+    .outsourcing .mainArti {padding: 335px 0 185px; margin-top: 0; background-position: top center; background-image: url('/assets/img/outsourcing/mainArti/moBg.png');}
+    .outsourcing .mainArti .txtWrap {display: block;}
+    .outsourcing .mainArti h4.sub {font-size: 24px; text-align: center; padding-left: 0; margin-bottom: 6px;}
+    .outsourcing .mainArti h4.sub .point:before {top: -12px; width: 5.5px; height: 5.5px;}
+    .outsourcing .mainArti h3.tit {font-size: 48px; text-align: center; margin-bottom: 25px;}
+    .outsourcing .mainArti .desc {font-size: 24px; text-align: center; margin-bottom: 54px;}
+    .outsourcing .mainArti .clickToConsult {gap: 13px; width: 208px; height: 55px; font-size: 22px; padding: 7px 29px;}
+    .outsourcing .mainArti .clickToConsult:after {width: 24px; height: 24px; margin-right: 0;}
+}
+
+/* consultingBox */
+.consultingBoxWrap {position: absolute; right: -453px; bottom: 0; display: inline-flex; flex-direction: column; align-items: end; color: var(--os-black); text-align: left; transition: all 0.3s; z-index: 999;}
+.consultingBoxWrap .closeBtn {margin-bottom: 13px; background-color: transparent; border: none; outline: none;}
+.consultingBoxWrap .consultingBox {display: flex; justify-content: center; align-items: center; width: 453px; height: 644px; flex-shrink: 0; border-radius: 30px; background: #FFF; box-shadow: 2px 2px 6.5px 0px rgba(0, 0, 0, 0.10); filter: drop-shadow(38px 45px 80.8px rgba(0, 0, 0, 0.20)) drop-shadow(5px 2px 12.2px rgba(0, 0, 0, 0.25));}
+.consultingBoxWrap .consultingBox .boxInner {max-width: 384px; width: 100%; padding-top: 11px;}
+.consultingBox .tit {color: var(--os-black); /* font-family: "Sandoll GyeokdongG2"; */ font-size: 32px; font-weight: 800; line-height: 48px; letter-spacing: -1.6px; margin-bottom: 21px;}
+.consultingBox .sub {color: var(--os-black); font-size: 20px; font-weight: 600; line-height: 130%;  letter-spacing: -1px; margin-bottom: 35px;}
+.consultingBox .sub span {color: var(--os-main-color); display: block; margin-top: 6px;}
+.consultingBox form .ipt {width: 100%; height: 50px; font-size: 20px; font-weight: 300; line-height: 165%; letter-spacing: -1px; padding: 8.5px 23px; border-radius: 10px; border: 1px solid #CACACA;}
+.consultingBox .ipt::placeholder {color: #D4D4D4;}
+.consultingBox .ipt::-webkit-input-placeholder {color: #D4D4D4;}
+.consultingBox .ipt::-ms-input-placeholder {color: #D4D4D4;}
+.consultingBox .ipt::-webkit-input-placeholder {color: #D4D4D4;}
+.consultingBox .ipt::-ms-input-placeholder {color: #D4D4D4;}
+.consultingBox form label {display: block; font-size: 20px; font-weight: 500; line-height: 165%; letter-spacing: -1px; margin-bottom: 5px;}
+.consultingBox form label span {color: var(--os-main-color);}
+.consultingBox form select.ipt {color: #D4D4D4; padding: 8.5px 68px 8.5px 23px; background-image: url('/assets/img/common/selectIco.svg'); background-repeat: no-repeat; background-position: right 22px center; background-size: 50px 50px; -o-appearance: none; -webkit-appearance: none; -moz-appearance: none; appearance: none; background-color: transparent;}
+.consultingBox form select.ipt.active {color: #363636; background-image: url('/assets/img/common/selectIcoActive.svg');}
+.consultingBox form select.ipt option {color: #363636; font-size: 20px; font-weight: 300; line-height: 165%; letter-spacing: -1px;}
+.consultingBox form .agreeBox {position: relative; display: flex; align-items: center; margin-top: 7px; margin-bottom: 57px; font-size: 15px; font-weight: 300; line-height: 140%; letter-spacing: -0.3px; cursor: pointer;}
+.consultingBox form .agreeBox input[type="checkbox"]{display: none;}
+.consultingBox form .agreeBox input[type="checkbox"] + .txt{position: relative; padding-left: 30px; display: flex; align-items: center;}
+.consultingBox form .agreeBox input[type="checkbox"] + .txt::before{content:''; position: absolute; top: 50%; left: 5px; transform: translateY(-50%); width: 20px; height: 20px; background-image: url('/assets/img/main/visitArti/checkbox_before.png'); background-size: 20px 20px; background-repeat: no-repeat; background-position: center;}
+.consultingBox form .agreeBox input[type="checkbox"]:checked + .txt::before{background-image: url('/assets/img/outsourcing/common/checkbox_after.png');}
+.consultingBox form .consultBtnWrap .submitBtn {display: flex; justify-content: center; align-items: center; width: 100%; height: 55px; border-radius: 11px; background: #CCC; font-family: 'Pretendard'; color: #fff; font-size: 22px; font-weight: 700; letter-spacing: -1.1px; border: none;}
+.consultingBox form .consultBtnWrap .submitBtn.active {color: #fff; background: var(--os-black);}
+
+@media screen and (max-width: 1200px) { 
+    .consultingBoxWrap{right: auto; left: 50%; transform: translateX(-50%);}
+}
+@media screen and (max-width: 650px) { 
+    .consultingBoxWrap{position: fixed; top: auto; bottom: -100%; left: auto; right: auto; transform: none; width: 100%; transition: bottom 0.5s;}
+    .consultingBoxWrap.show{bottom: 0;}
+    .consultingBoxWrap .consultingBox {display: block; max-width: 400px; width: 100%; height: auto; border-radius: 30px 30px 0 0; overflow: hidden; padding: 68px 27px 54px;}
+    .consultingBoxWrap .consultingBox .boxInner {max-width: none; padding-top: 0;}
+    .consultingBox .tit {font-size: 28px; line-height: 42px; letter-spacing: -1.4px; margin-bottom: 11px;}
+    .consultingBox .sub {line-height: 159%; margin-bottom: 10px;}
+    .consultingBox form .agreeBox {margin-bottom: 62px;}
+}
+
+/* outsourcing worryArti */
+.outsourcing .worryArti {color: var(--os-main-color); padding: 144px 0 113px; background-color: var(--os-gray02);}
+.outsourcing .worryArti h3.tit {font-size: 50px; font-weight: 900; text-align: center; margin-bottom: 60px;}
+.outsourcing .worryArti .cont {max-width: 890px; margin: 0 auto;}
+.outsourcing .worryArti .cont li {position: relative; font-size: 33px; font-weight: 500; line-height: normal; padding: 17px 17px 17px 89px; border-radius: 30px;}
+.outsourcing .worryArti .cont li + li {margin-top: 22px;}
+.outsourcing .worryArti .cont li:before {content: '';position: absolute; top: 16px; left: 28px; width: 41px; height: 41px; background-repeat: no-repeat; background-size: contain; background-position: center;}
+.outsourcing .worryArti .cont li:nth-of-type(odd) {color: var(--os-white); background-color: var(--os-main-color);}
+.outsourcing .worryArti .cont li:nth-of-type(even) {color: var(--os-main-color); background-color: var(--os-white);}
+.outsourcing .worryArti .cont li:nth-of-type(odd):before {background-image: url('/assets/img/outsourcing/worryArti/checkWhite.svg');}
+.outsourcing .worryArti .cont li:nth-of-type(even):before {background-image: url('/assets/img/outsourcing/worryArti/checkBlue.svg');}
+
+.outsourcing .worryArti .cont li {opacity: 0;}
+.outsourcing .worryArti.on .cont li {animation: fadeIn 0.5s ease-in-out 0s 1 forwards;}
+.outsourcing .worryArti.on .cont li:nth-child(1) {animation-delay: 0.2s;}
+.outsourcing .worryArti.on .cont li:nth-child(2) {animation-delay: 0.4s;}
+.outsourcing .worryArti.on .cont li:nth-child(3) {animation-delay: 0.6s;}
+.outsourcing .worryArti.on .cont li:nth-child(4) {animation-delay: 0.8s;}
+.outsourcing .worryArti.on .cont li:nth-child(5) {animation-delay: 1.0s;}
+.outsourcing .worryArti.on .cont li:nth-child(6) {animation-delay: 1.2s;}
+
+@media screen and (max-width: 650px) { 
+    .outsourcing .worryArti {padding: 112px 0 45px;}
+    .outsourcing .worryArti h3.tit {font-size: 36px; margin-bottom: 25px;}
+    .outsourcing .worryArti .cont li {font-size: 16px; line-height: 140%; letter-spacing: -0.8px; padding: 8.5px 7px 8.5px 41px; border-radius: 10px;}
+    .outsourcing .worryArti .cont li:before {top: 8px; left: 8px; width: 23px; height: 23px;}
+    .outsourcing .worryArti .cont li + li {margin-top: 15px;}
+}
+
+/* outsourcing effectArti */
+.outsourcing .effectArti {position: relative; color: var(--os-black); text-align: center; padding: 144px 0 113px;}
+.outsourcing .effectArti:before {content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 552px; background: url('/assets/img/outsourcing/effectArti/pcBgDiaGram.png') no-repeat top center;}
+.outsourcing .effectArti .inner {position: relative; z-index: 1; width: 1132px;}
+.outsourcing .effectArti h3.tit {margin-bottom: 53px;}
+.outsourcing .effectArti .effectWrap {display: flex; gap: 20px;}
+.outsourcing .effectArti .effectWrap li {display: flex; flex-direction: column; width: 364px; height: 607px; padding: 97px 32px 45px; border-radius: 150px; background: #EEE; border: 1px solid #EEE;}
+.outsourcing .effectArti .effectWrap li .effectTop {border-bottom: 1px solid var(--os-main-color);}
+.outsourcing .effectArti .effectWrap li .effectTit {font-size: 38px; font-weight: 700; line-height: 40px; letter-spacing: -1.9px; margin-bottom: 51px;}
+.outsourcing .effectArti .effectWrap li .effectImg {padding-bottom: 32px;}
+.outsourcing .effectArti .effectWrap li .effectDesc {display: flex; justify-content: center; align-items: center; height: 100%; font-size: 20px; font-weight: 400; line-height: 164%; letter-spacing: -1px;}
+
+@media screen and (max-width: 1175px) {
+    .outsourcing .effectArti .inner {width: 100%; margin: 0 auto;}
+    .outsourcing .effectArti:before {height: 46.98vw;}
+    .outsourcing .effectArti .effectWrap li {width: calc((100% - 40px) / 3); height: 44.6vw; padding: 6.89vw 3.49vw 4.68vw; border-radius: 12.60vw;}
+    .outsourcing .effectArti .effectWrap li .effectTit {font-size: 3.23vw; line-height: 3.40vw; margin-bottom: 2.72vw;}
+    .outsourcing .effectArti .effectWrap li .effectImg {padding-bottom: 1.87vw;}
+    .outsourcing .effectArti .effectWrap li .effectImg img {height: 7.32vw;}
+    .outsourcing .effectArti .effectWrap li .effectDesc {font-size: 1.70vw;}
+}
+@media screen and (max-width: 650px){
+    .outsourcing .effectArti {padding: 112px 0 45px;}
+    .outsourcing .effectArti:before {height: 627px; background: url('/assets/img/outsourcing/effectArti/moBgDiaGram.png') no-repeat top center;}
+    .outsourcing .effectArti h3.tit {font-size: 36px; margin-bottom: 28px;}
+    .outsourcing .effectArti .effectWrap {flex-direction: column; justify-content: center; align-items: center; gap: 10px;}
+    .outsourcing .effectArti .effectWrap li {position: relative; flex-direction: row; justify-content: space-between; align-items: center; max-width: 360px; width: 100%; max-height: 203px; height: 50.75vw; padding: 35px 16px 35px 22px; border-radius: 90px;}
+    .outsourcing .effectArti .effectWrap li:nth-child(2) {padding-left: 32px;}
+    .outsourcing .effectArti .effectWrap li:before {content: ''; position: absolute; top: 35px; left: 152px; width: 1px; height: calc(100% - 70px); background-color: var(--os-main-color);}
+    .outsourcing .effectArti .effectWrap li .effectTop {border-bottom: none;}
+    .outsourcing .effectArti .effectWrap li .effectTit {font-size: 24px; line-height: 40px; letter-spacing: -1.2px; margin-bottom: 8px;}
+    .outsourcing .effectArti .effectWrap li:nth-child(1) .effectTit {margin-bottom: 2px;}
+    .outsourcing .effectArti .effectWrap li:nth-child(2) .effectTit {line-height: 27px;}
+    .outsourcing .effectArti .effectWrap li .effectImg {padding-bottom: 0;}
+    .outsourcing .effectArti .effectWrap li .effectImg img {max-height: 53px; height: 13.25vw;}
+    .outsourcing .effectArti .effectWrap li:nth-child(1) img {height: 47px;}
+    .outsourcing .effectArti .effectWrap li .effectDesc {flex-shrink: 0; width: 181px; font-size: 15px; line-height: 154%; letter-spacing: -0.75px; padding-left: 9px;}
+    .outsourcing .effectArti .effectWrap li .effectDesc br {display: none;}
+}
+@media screen and (max-width: 400px){
+    .outsourcing .effectArti:before {height: 156.75vw;}
+    .outsourcing .effectArti .effectWrap li {padding: 8.75vw 4.00vw 8.75vw 5.50vw; border-radius: 22.50vw;}
+    .outsourcing .effectArti .effectWrap li:nth-child(2) {padding-left: 8.00vw;}
+    .outsourcing .effectArti .effectWrap li:before {top: 8.75vw; left: 38.00vw; height: calc(100% - 17.50vw);}
+    .outsourcing .effectArti .effectWrap li .effectTit {font-size: 6.00vw; line-height: 6.75vw; margin-bottom: 2.00vw;}
+    .outsourcing .effectArti .effectWrap li:nth-child(1) .effectTit {margin-bottom: 0.50vw;}
+    .outsourcing .effectArti .effectWrap li:nth-child(2) .effectTit {line-height: 6.75vw;}
+    .outsourcing .effectArti .effectWrap li:nth-child(1) img {height: 11.75vw;}
+    .outsourcing .effectArti .effectWrap li .effectDesc {width: 45.25vw; font-size: 3.75vw; padding-left: 2.25vw;}
+}
+
+/* outsourcing serviceArti */
+.outsourcing .serviceArti {color: var(--os-main-color); padding: 144px 0 113px; background-color: var(--os-gray02);}
+.outsourcing .serviceArti h3.tit {text-align: center; margin-bottom: 47px;}
+.outsourcing .serviceArti .cont {max-width: 1221px; margin: 0 auto;}
+.outsourcing .serviceArti .cont li {position: relative; display: flex; justify-content: center; width: 1221px; height: 169px; margin: 0 auto;}
+.outsourcing .serviceArti .cont li + li {margin-top: 49px;}
+.outsourcing .serviceArti .cont .cap {position: relative; display: flex; justify-content: center; align-items: center; width: 340px; height: 100%; color: var(--os-white); font-size: 48px; font-weight: 700; line-height: normal; background-color: var(--os-main-color); border-radius: 50px; z-index: 2; transition: all 0.3s;}
+.outsourcing .serviceArti .cont .inside {position: absolute; top: 0; display: flex; justify-content: center; align-items: center; width: 340px; height: 100%; color: transparent; font-size: 40px; font-weight: 500; line-height: normal; background-color: var(--os-white); border-radius: 50px; transition: all 0.3s;}
+
+.outsourcing .serviceArti .cont li.on .cap {transform: translate(-440px, 0px);}
+.outsourcing .serviceArti .cont li.on .inside {width: 100%; padding-left: 340px; color: var(--os-main-color); transform: translate(0, 0px);}
+
+@media screen and (max-width: 1261px){
+    .outsourcing .serviceArti .cont li {width: 100%;}
+    .outsourcing .serviceArti .cont .cap {width: 27.84%;}
+    .outsourcing .serviceArti .cont .inside {width: 27.84%;}
+
+    .outsourcing .serviceArti .cont li.on .cap {transform: translate(calc(-100% - 29.84%), 0px);}
+    .outsourcing .serviceArti .cont li.on .inside {padding-left: 30.84%;}
+}
+@media screen and (max-width: 650px){
+    .outsourcing .serviceArti {padding: 112px 0 45px;}
+    .outsourcing .serviceArti h3.tit {font-size: 36px; margin-bottom: 35px;}
+    .outsourcing .serviceArti .cont li {height: 92px;}
+    .outsourcing .serviceArti .cont li + li {margin-top: 29px;}
+    .outsourcing .serviceArti .cont .cap {width: 94px; font-size: 20px; border-radius: 15px;}
+    .outsourcing .serviceArti .cont .inside {width: 94px; font-size: 16px; border-radius: 15px;}
+
+    .outsourcing .serviceArti .cont li.on .cap {transform: translate(calc((-100vw + 40px) / 2 + 47px), 0px);}
+    .outsourcing .serviceArti .cont li.on .inside {padding-left: 114px; padding-right: 20px;}
+}
+
+/* outsourcing rateplanArti */
+.outsourcing .rateplanArti {color: var(--os-black); padding: 144px 0 113px; background: var(--os-white); overflow: hidden;}
+.outsourcing .rateplanArti .inner {width: 1292px; padding: 0;}
+.outsourcing .rateplanArti h3.tit {font-size: 50px; line-height: normal; text-align: center; margin-bottom: 57px;}
+.outsourcing .rateplanArti .rateplanWrap {margin-bottom: 41px;}
+.outsourcing .rateplanArti .rateplanWrap .swiper-wrapper {display: flex; gap: 28px;}
+.outsourcing .rateplanArti .rateplanWrap .type {flex: 1; font-family: 'Noto Sans KR';}
+.outsourcing .rateplanArti .rateplanWrap .typeSub {text-align: center; font-size: 16px; font-weight: 400; line-height: normal;  margin-bottom: 14px;}
+.outsourcing .rateplanArti .rateplanWrap .typeName {width: 211px; height: 65px; color: var(--os-white); font-size: 28px; font-weight: 800; line-height: 60px; text-align: center; margin: 0 auto; border-radius: 35.5px;}
+.outsourcing .rateplanArti .rateplanWrap .type.standard .typeName {background: linear-gradient(93deg, #D2D2D2 -5.06%, #717171 107.85%);}
+.outsourcing .rateplanArti .rateplanWrap .type.premium .typeName {background: linear-gradient(93deg, #717171 -5.06%, #181818 107.85%);}
+.outsourcing .rateplanArti .rateplanWrap .type.vip .typeName {background: linear-gradient(94deg, #181818 -293.74%, #0B317C 107.96%);}
+.outsourcing .rateplanArti .rateplanWrap .typeCard {width: 100%; height: 529px; margin-top: -5px; background: var(--os-white); border-radius: 37px; box-shadow: 3px 4px 23.8px 0px rgba(0, 0, 0, 0.25);}
+.outsourcing .rateplanArti .rateplanWrap .page {display: none;}
+.outsourcing .rateplanArti .rateplanWrap .page.start {display: flex; flex-direction: column; width: 100%; height: 100%; text-align: center; padding: 25px 53.5px 33px;}
+.outsourcing .rateplanArti .rateplanWrap .page.start .pageTop {display: flex; flex-direction: column; height: calc(100% - 137px);}
+.outsourcing .rateplanArti .rateplanWrap .add {position: relative; display: flex; flex-direction: column; align-items: center; gap: 27px; font-size: 24px; font-weight: 700; line-height: normal; text-align: center;}
+.outsourcing .rateplanArti .rateplanWrap .add:after {content: ''; position: relative; width: 21px; height: 21px; background-repeat: no-repeat; background-size: contain; background-position: center;}
+.outsourcing .rateplanArti .rateplanWrap .type.premium .add:after {background-image: url('/assets/img/outsourcing/rateplanArti/plusIco03.svg');}
+.outsourcing .rateplanArti .rateplanWrap .type.vip .add:after {background-image: url('/assets/img/outsourcing/rateplanArti/plusIco04.svg');}
+.outsourcing .rateplanArti .rateplanWrap .typeDesc {display: flex; flex-direction: column; justify-content: center; width: fit-content; height: 100%; margin: 0 auto;}
+.outsourcing .rateplanArti .rateplanWrap .type.standard .typeDesc li:last-child {letter-spacing: -2.7px;}
+.outsourcing .rateplanArti .rateplanWrap .type.premium .typeDesc, .outsourcing .rateplanArti .rateplanWrap .type.vip .typeDesc {padding-right: 35px;}
+.outsourcing .rateplanArti .rateplanWrap .typeDesc li {position: relative; font-size: 20px; font-weight: 400; line-height: normal; text-align: left; padding: 0 0 0 35px;}
+.outsourcing .rateplanArti .rateplanWrap .typeDesc li + li {margin-top: 7px;}
+.outsourcing .rateplanArti .rateplanWrap .typeDesc li:before {content: ''; position: absolute; top: 0.5px; left: 0; width: 29px; height: 29px; background: url('/assets/img/outsourcing/rateplanArti/checkIco01.svg') no-repeat center center / contain;}
+.outsourcing .rateplanArti .rateplanWrap .pageBtm {height: 137px; margin-top: auto;}
+.outsourcing .rateplanArti .rateplanWrap .typePrice {display: flex; justify-content: center; align-items: end; font-size: 48px; font-weight: 700; line-height: normal; letter-spacing: -2.4px; padding-top: 5px; margin-bottom: 7px; border-top: 1px solid var(--os-black);}
+.outsourcing .rateplanArti .rateplanWrap .type.standard .typePrice {color: #626262;}
+.outsourcing .rateplanArti .rateplanWrap .type.vip .typePrice {color: var(--os-main-color);}
+.outsourcing .rateplanArti .rateplanWrap .typePrice .unit {font-size: 24px; font-weight: 400; letter-spacing: -1.2px;}
+.outsourcing .rateplanArti .rateplanWrap .changeCardBtn {max-width: 246px; width: 100%; color: var(--os-white); text-align: center; font-size: 26px; font-weight: 800; line-height: 54px; border-radius: 35.5px; border: none;}
+.outsourcing .rateplanArti .rateplanWrap .type.standard .changeCardBtn {background: linear-gradient(93deg, #FFF -22.26%, #717171 107.83%);}
+.outsourcing .rateplanArti .rateplanWrap .type.premium .changeCardBtn {background: linear-gradient(93deg, #717171 -5.06%, #181818 107.85%);}
+.outsourcing .rateplanArti .rateplanWrap .type.vip .changeCardBtn {background: linear-gradient(94deg, #181818 -236.82%, #0B317C 107.96%);}
+.outsourcing .rateplanArti .rateplanWrap .page.end {position: relative; display: none; width: 100%; height: 100%; text-align: center; padding: 20px 47.5px;}
+.outsourcing .rateplanArti .rateplanWrap .page.end .backCardBtn {position: absolute; top: 49px; left: 48px; width: 45px; height: 45px; border: none; background-color: transparent; background-repeat: no-repeat; background-position: center; background-size: contain;}
+.outsourcing .rateplanArti .rateplanWrap .type.standard .page.end .backCardBtn {background-image: url('/assets/img/outsourcing/rateplanArti/backIco01.svg');}
+.outsourcing .rateplanArti .rateplanWrap .type.premium .page.end .backCardBtn {background-image: url('/assets/img/outsourcing/rateplanArti/backIco02.svg');}
+.outsourcing .rateplanArti .rateplanWrap .type.vip .page.end .backCardBtn {background-image: url('/assets/img/outsourcing/rateplanArti/backIco03.svg');}
+.outsourcing .rateplanArti .rateplanWrap .page.end .logo {max-width: 141px; padding-top: 7.5px; margin-bottom: 18px;}
+.outsourcing .rateplanArti .rateplanWrap .page.end .tit {font-size: 32px; font-weight: 700; line-height: 40px; letter-spacing: -1.6px; margin-bottom: 34px;}
+.outsourcing .rateplanArti .rateplanWrap .page.end .tit span {display: block; font-size: 14px; font-weight: 300; line-height: 140%; letter-spacing: -0.28px; margin-top: 8px;}
+.outsourcing .rateplanArti .rateplanWrap .inputBox {display: flex; gap: 10px; width: 100%; padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px solid #CDCDCD;}
+.outsourcing .rateplanArti .rateplanWrap .inputBox label {flex: none; font-size: 18px; font-weight: 500; line-height: 140%; letter-spacing: -0.9px; text-align: left;}
+.outsourcing .rateplanArti .rateplanWrap .inputBox input {border: none; width: inherit; font-size: 16px; font-weight: 500; line-height: 140%; letter-spacing: -0.8px; background-color: transparent;}
+.outsourcing .rateplanArti .rateplanWrap .inputBox input::placeholder{color: #C2C2C2;}
+.outsourcing .rateplanArti .rateplanWrap .inputBox input::-webkit-input-placeholder {color: #C2C2C2;}
+.outsourcing .rateplanArti .rateplanWrap .inputBox input:-ms-input-placeholder {color: #C2C2C2;}
+.outsourcing .rateplanArti .lastComment {font-size: 16px; font-weight: 700; line-height: 140%; letter-spacing: -0.8px; text-align: center; padding-top: 19px; margin-bottom: 21px;}
+.outsourcing .rateplanArti .rateplanWrap .clickToComplete {color: var(--os-white); width: 100%; font-size: 26px; font-weight: 700; line-height: 49px; border-radius: 10px; border: none; outline: none; background-color: var(--os-main-color);}
+.outsourcing .rateplanArti .noti {color: var(--os-gray); font-size: 14px; font-weight: 500; line-height: normal; text-align: center;}
+.outsourcing .swiper-pagination, .outsourcing .swiper-button-prev, .outsourcing .swiper-button-next {display: none;}
+
+.outsourcing .rateplanArti .rateplanWrap .type {opacity: 0;}
+.outsourcing .rateplanArti.on .rateplanWrap .type {animation: fadeIn 0.5s ease-in-out 0s 1 forwards;}
+.outsourcing .rateplanArti.on .rateplanWrap .type:nth-child(1) {animation-delay: 0.2s;}
+.outsourcing .rateplanArti.on .rateplanWrap .type:nth-child(2) {animation-delay: 0.4s;}
+.outsourcing .rateplanArti.on .rateplanWrap .type:nth-child(3) {animation-delay: 0.6s;}
+
+@media screen and (max-width: 1332px) {
+    .outsourcing .rateplanArti .inner {width: 100%; padding: 0 20px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.start {padding: 25px 23.5px 33px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end {padding: 20px 27.5px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end .tit {font-size: 28px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end .backCardBtn {left: 28px;}
+}
+@media screen and (max-width: 1024px) {
+    .outsourcing .rateplanArti {position: relative;}
+    .outsourcing .rateplanArti .rateplanWrap {max-width: 432px; width: 100%; padding-bottom: 32px; margin: 0 auto;}
+    .outsourcing .swiper-pagination {position: relative; left: auto; bottom: auto; transform: none; display: flex; justify-content: space-around; align-items: center; max-width: 282px; width: 100%; height: 45px; margin: 0 auto 25px; border-radius: 35.5px; background: linear-gradient(90deg, #FFF 0%, #C2C2C2 100%);}
+    .outsourcing .swiper-pagination:before {content: ''; position: absolute; top: 0; left: 0; width: 114px; height: 100%; margin: 0 auto; background: linear-gradient(93deg, #D2D2D2 -5.06%, #717171 107.85%); border-radius: 35.5px; z-index: -1; transition: all 0.3s; transform: translate3d(-10px, 0, 0);}
+    .outsourcing .swiper-pagination.page-0:before {width: 114px; background: linear-gradient(93deg, #D2D2D2 -5.06%, #717171 107.85%); transform: translate3d(-10px, 0, 0);}
+    .outsourcing .swiper-pagination.page-1:before {width: 130px; background: linear-gradient(93deg, #717171 -5.06%, #181818 107.85%); transform: translate3d(78px, 0, 0);}
+    .outsourcing .swiper-pagination.page-2:before {width: 130px; background: var(--os-main-color); transform: translate3d(170px, 0, 0);}
+    .outsourcing .swiper-pagination .swiper-pagination-bullet {position: relative; width: -webkit-fill-available; height: auto; color: #767676; text-align: center; font-size: 16px; font-weight: 400; line-height: normal; background-color: transparent; margin: 0; opacity: 1;}
+    .outsourcing .swiper-pagination .swiper-pagination-bullet:after {content: ''; position: absolute; top: 50%; right: -0.5px; transform: translateY(-50%); width: 1px; height: 14px; background-color: #767676;}
+    .outsourcing .swiper-pagination .swiper-pagination-bullet:last-child:after {content: none;}
+    .outsourcing .swiper-pagination .swiper-pagination-bullet.on {color: var(--os-white); font-size: 20px; font-weight: 700;}
+    .outsourcing .swiper-pagination .swiper-pagination-bullet.on:after, .outsourcing .swiper-pagination.page-1 .swiper-pagination-bullet:nth-child(1):after, .outsourcing .swiper-pagination.page-2 .swiper-pagination-bullet:nth-child(2):after {content: none;}
+    .outsourcing .rateplanArti .rateplanWrap .swiper-wrapper {gap: 0;}
+    .outsourcing .rateplanArti .rateplanWrap .type {flex: none; width: 100%!important;}
+    .outsourcing .rateplanArti .rateplanWrap .typeCard {width: calc(100% - 20px); margin: 0 10px;}
+    .outsourcing .rateplanArti .rateplanWrap .typeName {display: none;}
+    .outsourcing .swiperBtnWrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: calc(412px + 40px + 100px); width: 100%; margin-top: 16px; z-index: 1;}
+    .outsourcing .swiper-button-prev, .outsourcing .swiper-button-next {display: block; width: 50px; height: 50px; background-repeat: no-repeat; background-position: center; background-size: contain; transition: opacity 0.3s;}
+    .outsourcing .swiper-button-disabled {visibility: none; opacity: 0;}
+    .outsourcing .swiper-button-prev {left: 0; background-image: url('/assets/img/outsourcing/rateplanArti/leftBtn.svg');}
+    .outsourcing .swiper-button-next {right: 0; background-image: url('/assets/img/outsourcing/rateplanArti/rightBtn.svg');}
+
+    .outsourcing .rateplanArti.on .rateplanWrap .type:nth-child(1), .outsourcing .rateplanArti.on .rateplanWrap .type:nth-child(2), .outsourcing .rateplanArti.on .rateplanWrap .type:nth-child(3) {animation-delay: 0s;}
+    .outsourcing .rateplanArti .swiper-pagination {opacity: 0;}
+    .outsourcing .rateplanArti.on .swiper-pagination {animation: fadeIn 0.5s ease-in-out 0s 1 forwards;}
+    .outsourcing .rateplanArti .rateplanWrap {opacity: 0;}
+    .outsourcing .rateplanArti.on .rateplanWrap {animation: fadeIn 0.5s ease-in-out 0s 1 forwards; animation-delay: 0.2s;}
+
+    .outsourcing .rateplanArti .rateplanWrap .swiper-slide.type {visibility: hidden; opacity: 0; transition: all 0.3s ease-in-out;}
+    .outsourcing .rateplanArti .rateplanWrap .swiper-slide.type.swiper-slide-active {visibility: visible; opacity: 1;}
+}
+@media screen and (max-width: 650px){
+    .outsourcing .rateplanArti {padding: 112px 0 45px;}
+    .outsourcing .rateplanArti h3.tit {font-size: 40px; margin-bottom: 38px;}
+    .outsourcing .rateplanArti .rateplanWrap {/* max-width: 302px;*/ max-width: 322px; padding-bottom: 30px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.start {padding: 25px 12px 23px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.start .pageTop {height: calc(100% - 163px);}
+    .outsourcing .rateplanArti .rateplanWrap .typeCard { height: 526px; border-radius: 30px;}
+    .outsourcing .rateplanArti .rateplanWrap .typeSub {font-size: 17px; letter-spacing: -0.85px; margin-bottom: 25px;}
+    .outsourcing .rateplanArti .rateplanWrap .add {gap: 9px; font-size: 18px; letter-spacing: -0.9px;}
+    .outsourcing .rateplanArti .rateplanWrap .add:after {width: 18px; height: 18px;}
+    .outsourcing .rateplanArti .rateplanWrap .typeDesc li {font-size: 16px; letter-spacing: -0.8px;}
+    .outsourcing .rateplanArti .rateplanWrap .typeDesc li:before {top: 0; width: 24px; height: 24px;}
+    .outsourcing .rateplanArti .rateplanWrap .type.standard .typeDesc li:last-child {letter-spacing: -1.4px;}
+    .outsourcing .rateplanArti .rateplanWrap .pageBtm {height: 163px;}
+    .outsourcing .rateplanArti .rateplanWrap .typePrice {font-size: 28px; letter-spacing: normal; padding-top: 68px; margin-bottom: 6px;}
+    .outsourcing .rateplanArti .rateplanWrap .typePrice .unit {font-size: 20px;}
+    .outsourcing .rateplanArti .rateplanWrap .changeCardBtn {max-width: 208px; font-size: 24px; line-height: 46px;}
+    .outsourcing .rateplanArti .noti {max-width: 282px; font-size: 15px; text-align: left; margin: 0 auto;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end {padding: 26px 18.5px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end .backCardBtn {top: 18px; left: 19px; width: 41px; height: 41px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end .logo {max-width: 132px; padding-top: 0; margin-bottom: 27px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end .tit {font-size: 24px; line-height: 30px; letter-spacing: -1.2px; margin-bottom: 56px;}
+    .outsourcing .rateplanArti .rateplanWrap .page.end .tit span {margin-top: 4px;}
+    .outsourcing .rateplanArti .rateplanWrap .inputBox {gap: 13px; padding-bottom: 10px;}
+    .outsourcing .rateplanArti .rateplanWrap .inputBox label {font-size: 16px; letter-spacing: -0.8px;}
+    .outsourcing .rateplanArti .rateplanWrap .inputBox input {font-size: 15px; letter-spacing: -0.75px;}
+    .outsourcing .rateplanArti .lastComment {padding-top: 28px; margin-bottom: 17px;}
+    .outsourcing .rateplanArti .rateplanWrap .clickToComplete {font-size: 20px; line-height: 45px; letter-spacing: -1px;}
+    .outsourcing .swiperBtnWrap {max-width: calc(302px + 40px + 100px);}
+    .outsourcing .swiper-button-prev, .outsourcing .swiper-button-next {max-width: 50px; width: 12.50vw; max-height: 50px; height: 12.50vw;}
+}
+
+/* outsourcing processArti */
+.outsourcing .processArti {text-align: center; padding: 144px 0 113px; background-color: var(--os-gray02);}
+.outsourcing .processArti h3.tit {margin-bottom: 109px;}
+.outsourcing .processArti .processWrap {display: flex; justify-content: center; gap: 3px; color: var(--os-white);}
+.outsourcing .processArti .processWrap li {position: relative; display: flex; flex-direction: column; width: 279px; height: 279px; font-family: 'Noto Sans KR'; padding: 12px; background-color: var(--os-main-color);}
+.outsourcing .processArti .proNum {position: absolute; top: 10px; right: 18px; color: var(--os-white); text-align: right; font-size: 20px; font-weight: 400; line-height: normal;}
+.outsourcing .processArti .proTit {font-size: 38px; font-weight: 700; line-height: normal; padding-top: 46px; margin-bottom: 25px;}
+.outsourcing .processArti .proDesc {font-size: 20px; font-weight: 400; line-height: normal;}
+
+.outsourcing .processArti .processWrap li {opacity: 0;}
+.outsourcing .processArti.on .processWrap li {animation: fadeIn 0.5s ease-in-out 0s 1 forwards;}
+
+@media screen and (max-width: 1200px){
+    .outsourcing .processArti .processWrap {flex-wrap: wrap; max-width: 561px; margin: 0 auto;}
+    .outsourcing .processArti .processWrap li {width: calc((100% - 3px) / 2);}
+}
+@media screen and (max-width: 650px){
+    .outsourcing .processArti {padding: 112px 0 45px;}
+    .outsourcing .processArti h3.tit {font-size: 30px; margin-bottom: 73px;}
+    .outsourcing .processArti .processWrap li {justify-content: center; height: 44.63vw;}
+    .outsourcing .processArti .proNum {top: 6px; right: 12px; font-size: 16px;}
+    .outsourcing .processArti .proTit {font-size: 26px; padding-top: 0; margin-top: -4px; margin-bottom: 13px;}
+    .outsourcing .processArti .proDesc {font-size: 16px;}
+}
+@media screen and (max-width: 400px){
+    .outsourcing .processArti .proTit {font-size: 6.50vw; margin-top: -1.00vw; margin-bottom: 3.25vw;}
+    .outsourcing .processArti .proDesc {font-size: 4.00vw;}
+}
+
+/* outsourcing faqArti */
+.outsourcing .faqArti {color: var(--os-white); padding: 144px 0 113px; background-color: var(--os-main-color);}
+.outsourcing .faqArti .inner {display: flex; justify-content: space-between; width: 1374px;}
+.outsourcing .faqArti h3.tit {color: var(--os-white); font-size: 70px; font-weight: 900; line-height: normal; margin-top: -9px;}
+.outsourcing .faqArti .faqListWrap {max-width: 782px; width: 100%;}
+.outsourcing .faqArti .faqList {width: 100%; border-top: 1px solid var(--os-white);}
+.outsourcing .faqArti .faqList li .question {position: relative; display: flex; font-size: 30px; font-weight: 600; line-height: normal; padding: 31px 40px 31px 0; border-bottom: 1px solid var(--os-white); transition: border-color 0.3s ease-in-out, opacity 0.3s ease-in-out; cursor: pointer;}
+.outsourcing .faqArti .faqList li .question:after {content: ''; position: absolute; top: 31.5px; right: 0; width: 36px; height: 36px; background-repeat: no-repeat; background-size: contain; background-position: center; background-image: url('/assets/img/outsourcing/faqArti/pcArrIco.svg'); transition: all 0.3s;}
+.outsourcing .faqArti .faqList li .question .point {color: var(--os-white);}
+.outsourcing .faqArti .faqList li .answer {display: none; color: var(--os-white); font-size: 24px; font-weight: 300; line-height: 160%; letter-spacing: -1.2px; padding-bottom: 46px; border-bottom: 1px solid #C2C2C2;}
+.outsourcing .faqArti .faqList li.on .question {border-bottom-color: rgba(194, 194, 194, 0);}
+.outsourcing .faqArti .faqList li.on .question:after {transform: rotate(180deg);}
+
+@media screen and (max-width: 1400px){
+    .outsourcing .faqArti .inner {width: 100%; padding: 0 20px;}
+}
+@media screen and (max-width: 1024px){
+    .outsourcing .faqArti .inner {flex-direction: column; gap: 100px;}
+    .outsourcing .faqArti .faqListWrap {max-width: none;}
+}
+@media screen and (max-width: 650px){
+    .outsourcing .faqArti {padding: 112px 0 45px;}
+    .outsourcing .faqArti .inner {gap: 50px;}
+    .outsourcing .faqArti h3.tit {font-size: 36px; margin-top: 0;}
+    .outsourcing .faqArti .faqList li .question {font-size: 20px; padding: 20px 35px 20px 0;}
+    .outsourcing .faqArti .faqList li .question:after {top: 14px; width: 35px; height: 35px; background: url('/assets/img/outsourcing/faqArti/moArrIco.svg') no-repeat center center / contain;}
+    .outsourcing .faqArti .faqList li .answer {font-size: 18px; line-height: 130%; letter-spacing: -0.9px;}
+}
+
+/* outsourcing connectArti */
+.outsourcing .connectArti {text-align: center; padding: 144px 0 113px; background: var(--os-gray02);}
+.outsourcing .connectArti .inner {width: 1135px;}
+.outsourcing .connectArti h3.tit {margin-bottom: 87px;}
+.outsourcing .connectArti .conBoxWrap {display: flex; gap: 20px;}
+.outsourcing .connectArti .conBoxWrap li {flex: 1; height: 293px; padding: 48px 20px 0; border-radius: 20px; border: 1px solid var(--os-gray);}
+.outsourcing .connectArti .conBoxWrap .conIco {margin-bottom: 14px;}
+.outsourcing .connectArti .conBoxWrap .conTit {color: var(--os-black); font-size: 36px; font-weight: 700; line-height: normal; letter-spacing: -1.8px; margin-bottom: 16px;}
+.outsourcing .connectArti .conBoxWrap .conSub {font-size: 20px; font-weight: 400; line-height: 130%;  letter-spacing: -1px; margin-bottom: 17px;}
+.outsourcing .connectArti .conBoxWrap .conBtn {display: inline-flex; justify-content: center; align-items: center; color: var(--os-white); text-align: center; font-size: 24px; font-weight: 700; line-height: 23.87px; letter-spacing: -1.2px; padding: 16px 58px 16px 56px; border-radius: 500px; background: var(--os-main-color);}
+
+@media screen and (max-width: 1175px){
+    .outsourcing .connectArti .inner {width: 100%;}
+}
+@media screen and (max-width: 810px){
+    .outsourcing .connectArti .conBoxWrap {flex-direction: column; gap: 50px;}
+    .outsourcing .connectArti .conBoxWrap li {flex: none;}
+}
+@media screen and (max-width: 650px){
+    .outsourcing .connectArti {padding: 112px 0 45px;}
+    .outsourcing .connectArti h3.tit {font-size: 32px; margin-bottom: 46px;}
+    .outsourcing .connectArti .conBoxWrap {gap: 40px;}
+    .outsourcing .connectArti .conBoxWrap li {height: 204px; padding: 25px 20px 0;}
+    .outsourcing .connectArti .conBoxWrap .conIco {width: 50px; margin-bottom: 13px;}
+    .outsourcing .connectArti .conBoxWrap .conTit {font-size: 26px; letter-spacing: -1.3px; margin-bottom: 7px;}
+    .outsourcing .connectArti .conBoxWrap .conSub {font-size: 17px; letter-spacing: -0.85px; margin-bottom: 14px;}
+    .outsourcing .connectArti .conBoxWrap .conBtn {font-size: 20px; letter-spacing: -1px; padding: 8px 41px;}
+}
